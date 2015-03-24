@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Fleet Street Kitchen</title>
+		<link href="css/site.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bentham' rel='stylesheet' type='text/css'>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+	      function initialize() {
+			var myLatlng = new google.maps.LatLng(39.2844658,-76.5996519);
+
+			var mapOptions = {
+				zoom: 8,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+
+			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: 'Hello World!'
+			});
+	      }
+
+	      google.maps.event.addDomListener(window, 'load', initialize);
+    	</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<img class="logo" src="images/kitchen-logo.png" alt="">
+			<div class="top-info site-wrapper">
+				<div class="col2">
+					<ul class="hours">
+						<li>
+							<p class="title">Monday &dash; Thursday</p>
+							<p>5:00 pm &dash; 10:00 pm</p>
+						</li>
+						<li>
+							<p class="title">Friday &dash; Saturday</p>
+							<p>5:00 pm &dash; 11:00 pm</p>
+						</li>
+						<li>
+							<p class="title">Sunday</p>
+							<p>5:00 pm &dash; 9:00 pm</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col2">
+					<p class="title">Address</p>
+					<p>1012 Fleet Street, <br> Baltimore, MD 21202</p>
+				  
+					<p class="title">Phone</p>
+					<p>(410) 244-5830</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="site-wrapper">
+			
+			<div class="menuTitles">
+				<p class="restaurant-week">Restaurant Week Menu</p>
+				<div class="col2">
+					<p>Three Courses <span class="secondaryColor">$30</span></p>
+				</div>
+					
+				<div class="col2">					
+					<p> Wine Pairing <span class="secondaryColor">$18</span></p>
+				</div>
+			</div>
+			<hr>
+	
+			<div class="menu-columns">
+			
+				<div class="column">
+					<h4>Entre&eacute;e One</h4>
+					<h5>Leaf Lettuce</h5>
+					<p>Asian pear, pumpernickel, green peppercorn, lemon vinaigrette</p>
+					<p class="secondaryColor">Sauvignon Blanc &ndash; Patient Cottat, Le Grand Caillou, Loire, France 2013</p>
+
+ 
+					<h5>Braised Beef Agnolotti </h5>
+					<p>Green cabbage, celery root, preserved lemon</p>
+					<p class="secondaryColor">Riesling &ndash; Kurt Darting, D&uuml;rkheimer Hochben &ndash; Kabinett, Pfalz, Germany 2013</p>
+
+					
+					<h5>Squash Velouté</h5>
+					<p>Bay laurel cream, compressed apple, marcona almonds</p>
+					<p class="secondaryColor">Chardonnay &ndash; &Eacute;ric Chevalier, Loire, France 2012</p>
+
+					
+					<h5>Beet Salad</h5>
+					<p>Orange, pine nut butter, ricotta salata, sourdough tuile, baby greens</p>
+					<p class="secondaryColor">Gamay &ndash; Potel Aviron, Vielles Vignes, Fleurie, Beaujolais, France 2010</p>
+				</div>
+			          
+				<div class="column">
+					<h4>Entr&eacute;e Two</h4>
+					<h5>Pastrami Short Rib</h5>
+					<p>Huckleberry, parsnip, kale, sauerkraut &ndash; rye</p>
+					<p class="secondaryColor">Syrah Blend &ndash; Domaine La Blaque, Pierrevert, Provence, France 2011</p>
+
+
+					<h5>Jumbo Rockfish</h5>
+					<p>Pumpkin dashi, littleneck clams, shiitake mushroom, wild rice</p>
+					<p class="secondaryColor">Gr&uuml;ner Veltliner &ndash; Huber, Terrassen, Traisental, Austria 2013</p>
+
+					
+					<h5>Vegetable Ash Garganelli</h5>
+					<p>Black garlic, cipollini onion, wild mushroom, meyer lemon gremolata</p>
+					<p class="secondaryColor">Barbera &ndash; De Forville, Alba, Piedmont, Italy 2013</p>
+
+					
+					<h5>Chicken Roulade</h5>
+					<p>White miso, cheddar grits, brussels sprouts, chicken jus</p>
+					<p class="secondaryColor">Pinot Noir &ndash; Wildewood, Willamette Valley, Oregon, 2013 </p>
+			    </div>
+			          
+				<div class="column">
+					<h4>Dessert</h4>
+					<h5>Bittersweet Chocolate Terrine</h5>
+					<p>Blood orange, hazelnut brittle, smoked vanilla bean ice cream</p>
+					<p class="secondaryColor">Lambrusco &ndash; Cantina Puianello, Primabolla, Reggiano, Emilia-Romagna, Italy</p>
+
+					
+					<h5>Baked Pear</h5>
+					<p>Candied walnuts, port caramel, mascarpone ice cream</p>
+					<p class="secondaryColor">Madeira &ndash; Broadbent, Five Year Reserve, Portugal</p>
+
+					
+					<h5>&#8220;Movie Theater&#8221; Sundae For Two</h5>
+					<p>Buttered popcorn ice cream, toffee butter crunch, caramel sauce</p>
+					<p class="secondaryColor">Sauternes &ndash; Style Blend &ndash; Château La Rame, Sainte &ndash; Croixe
+					&ndash; Du &ndash; Mont, Bordeaux, France 2010</p>
+
+					
+					<h5>Duo of Cheese</h5>
+					<p>Preserved fruit jam, candied nuts, crostini</p>
+					<p class="secondaryColor">Lambrusco &ndash; Cantina Puianello, Primabolla, Reggiano, Emilia &ndash; Romagna, Italy</p>
+				</div>
+
+			</div>	
+				
+			<div class="winePair">
+				<p class="secondaryColor">*Suggested Wine Pairing*</p>
+			</div>
+
+			<hr>
+			
+			<div class="info">
+				<div id="map-canvas"></div>
+			
+				<ul class="about">
+					<li>
+						<h5>Gift Card</h5>
+						<p>To purchase, call us at (410) 244-5830, stop by the restaurant</p>
+					</li>
+					<li>
+						<h5>Parking</h5>
+						<p>Valet is available.</p>
+					</li>
+					<li>
+						<h5>Reservations</h5>
+						<p>Call us directly at (410) 244-5830</p>
+					</li>
+					<li>
+						<h5>Dress Code</h5>
+						<p>Business casual attire is requested in the bar and restaurant.</p>
+					</li>
+				</ul>
+
+			</div>	
+		
+		</div>	
+
+		<div class="footer">
+				<div class="site-wrapper">
+					<img class="footerLogo" src="images/footer-logo.png" alt="">
+					<div class="col2">
+						<ul class="hours">
+							<li>
+								<p class="title">Monday &dash; Thursday</p>
+								<p>5:00 pm &dash; 10:00 pm</p>
+							</li>
+							<li>
+								<p class="title">Friday &dash; Saturday</p>
+								<p>5:00 pm &dash; 11:00 pm</p>
+							</li>
+							<li>
+								<p class="title">Sunday</p>
+								<p>5:00 pm &dash; 9:00 pm</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col2">
+						<p class="title">Address</p>
+						<p>1012 Fleet Street, <br> Baltimore, MD 21202</p>
+					  
+						<p class="title">Phone</p>
+						<p>(410) 244-5830</p>
+					</div>
+					
+					<div class="social-logo">
+						<img class= "emailLogo" src="images/email-logo.png" alt="">
+						<img class= "twitterLogo" src="images/twitter-logo.png" alt="">
+						<img class= "facebookLogo" src="images/fb-logo.png" alt="">
+					</div>
+				
+				</div>
+		</div>
+	</body>
+</html>

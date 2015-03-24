@@ -293,6 +293,7 @@ img.emailLogo {
   margin-top: 0;  
 }
 /* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
   .column,
   .hours,
   #map-canvas {
